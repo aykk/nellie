@@ -275,6 +275,7 @@ export function FunctionalityPage() {
             <p className="text-center text-lg text-gray-700">
               {selectedTask?.status === 'Done' ? 'This task is completed!' : 'What would you like to do with this task?'}
             </p>
+            <p className="text-center text-lg text-gray-700 mt-2">Content for {selectedTask?.title} here</p>
             <DialogFooter>
               {selectedTask?.status !== 'Done' && (
                 <>
