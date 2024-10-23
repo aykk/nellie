@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export function LandingPage() {
+export function LandingPageComponent() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-200 via-purple-100 to-indigo-300">
       <nav className="container mx-auto px-4 py-6">
@@ -20,9 +20,11 @@ export function LandingPage() {
         <p className="text-lg md:text-xl text-center text-indigo-800 mb-8 max-w-2xl">
           Smarter journeys, inspired by Nellie!
         </p>
-        <Button className="text-lg px-8 py-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-          Get Started
-        </Button>
+        <Link href="/functionality">
+          <Button className="text-lg px-8 py-6 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            Get Started
+          </Button>
+        </Link>
       </main>
     </div>
   )
