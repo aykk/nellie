@@ -76,7 +76,7 @@ const RewardsWindow = ({ points, onClose }) => (
   </Dialog>
 )
 
-const hardcodedContent = {
+const demoContent = {
   "South Korea": {
     "Language basics": "Learn essential Korean phrases: 안녕하세요 (annyeonghaseyo) - Hello, 감사합니다 (gamsahamnida) - Thank you, 주세요 (juseyo) - Please give me. Practice Korean alphabet (Hangul) basics.",
     "Local resources": "Visit the Korea Tourism Organization website (visitkorea.or.kr) for official travel information. Download Naver Maps for navigation and KakaoTalk for local communication.",
@@ -277,7 +277,7 @@ export function FunctionalityPage() {
   const getContent = (title, location) => {
     if (!title || !location) return "No content available";
     const cleanTitle = title.replace(`in ${location}`, '').trim();
-    return hardcodedContent[location]?.[cleanTitle] || `No content available for ${title}`;
+    return demoContent[location]?.[cleanTitle] || `No content available for ${title}`;
   }
 
   if (showDashboard) {
